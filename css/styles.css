@@ -2,18 +2,6 @@
  Partial Imports
 ************************************/
 /***********************************
- Import utilities styles
-***********************************/
-/***********************************
- Variables
-************************************/
-/***********************************
- Mixins
-************************************/
-/***********************************
- Placeholders
-************************************/
-/***********************************
  Import base styles
 ***********************************/
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -349,25 +337,445 @@ template {
 }
 
 /***********************************
+ Base styles
+************************************/
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  line-height: 1.65;
+}
+
+/***********************************
+ Import utilities styles
+***********************************/
+/***********************************
+ Variables
+************************************/
+/***********************************
+ Mixins
+************************************/
+/***********************************
+ Functions
+************************************/
+@media (min-width: 769px) {
+  .theme__colors.btn--default {
+    width: 17%;
+  }
+}
+
+@media (min-width: 769px) {
+  .theme__colors.btn--success {
+    width: 17%;
+  }
+}
+
+@media (min-width: 769px) {
+  .theme__colors.btn--error {
+    width: 17%;
+  }
+}
+
+@media (min-width: 769px) {
+  .theme__colors.btn--warning {
+    width: 17%;
+  }
+}
+
+@media (min-width: 769px) {
+  .theme__colors.btn--info {
+    width: 17%;
+  }
+}
+
+@media (min-width: 769px) {
+  .grid__col--2 {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
+@media (min-width: 769px) {
+  .grid__col--3 {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
+@media (min-width: 769px) {
+  .grid__col--4 {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
+@media (min-width: 769px) {
+  .grid__col--5 {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
+@media (min-width: 769px) {
+  .grid__col--6 {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
+@media (min-width: 769px) {
+  .grid__col--7 {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
+@media (min-width: 769px) {
+  .grid__col--8 {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
+@media (min-width: 769px) {
+  .grid__col--9 {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
+@media (min-width: 769px) {
+  .grid__col--10 {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
+@media (min-width: 769px) {
+  .grid__col--11 {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
+@media (min-width: 769px) {
+  .grid__col--12 {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+
+/***********************************
+ Placeholders
+************************************/
+.theme__colors {
+  padding: 1em 0;
+  font-weight: bold;
+  font-size: 0.8em;
+  border: 0;
+  border-radius: 0.35em;
+  width: 100%;
+}
+
+.theme__colors.btn--default, .theme__colors.btn--success, .theme__colors.btn--error, .theme__colors.btn--warning, .theme__colors.btn--info {
+  color: #FFF;
+  text-transform: uppercase;
+  margin-top: 1em;
+  transition: opacity 0.3s;
+}
+.theme__colors.btn--default:hover, .theme__colors.btn--success:hover, .theme__colors.btn--error:hover, .theme__colors.btn--warning:hover, .theme__colors.btn--info:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.theme__colors.btn--default:active, .theme__colors.btn--success:active, .theme__colors.btn--error:active, .theme__colors.btn--warning:active, .theme__colors.btn--info:active {
+  opacity: initial;
+}
+
+.img--avatar, .img--frame, .img--logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+.nav__item a {
+  text-decoration: none;
+  text-align: center;
+  color: #838383;
+  padding: 1em;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.nav__item a:hover {
+  background-color: #58E1C1;
+  color: #FFF;
+}
+
+/***********************************
  Import components styles
 ***********************************/
 /***********************************
  Grid
 ************************************/
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.75em;
+}
+
+.grid__row {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0;
+}
+@media (min-width: 769px) {
+  .grid__row {
+    flex-direction: row;
+  }
+}
+
+.theme__colors.grid__col--3 {
+  background-color: #DEB2EE;
+}
+.theme__colors.grid__col--4 {
+  background-color: #7EE6FD;
+}
+.theme__colors.grid__col--5 {
+  background-color: #88D9A0;
+}
+.theme__colors.grid__col--6 {
+  background-color: #3FABCA;
+}
+.theme__colors.grid__col--7 {
+  background-color: #EC9FA3;
+}
+.theme__colors.grid__col--8 {
+  background-color: #FD9F85;
+}
+.theme__colors.grid__col--12 {
+  background-color: #80E8D1;
+}
+
+@media (min-width: 769px) {
+  .grid__col--3 {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: 769px) {
+  .grid__col--4 {
+    flex-grow: 1;
+  }
+}
+@includ mq("med") {
+  .grid__col--4 {
+    width: 33.333333%;
+  }
+}
+
+@media (min-width: 769px) {
+  .grid__col--5 {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: 769px) {
+  .grid__col--6 {
+    flex-grow: 1;
+  }
+}
+@media (min-width: 769px) {
+  .grid__col--6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .grid__col--7 {
+    flex-grow: 1.4;
+  }
+}
+
+@media (min-width: 769px) {
+  .grid__col--8 {
+    flex-grow: 2;
+  }
+}
+@media (min-width: 769px) {
+  .grid__col--8 {
+    width: 66.666666%;
+  }
+}
+
+@media (min-width: 769px) {
+  .grid__col--9 {
+    flex-grow: 3;
+  }
+}
+
+@media (min-width: 769px) {
+  .grid__row > .grid__col--9 {
+    align-self: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .grid__col--12 {
+    flex-grow: 1;
+  }
+}
+@media (min-width: 769px) {
+  .grid__col--12 {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 769px) {
+  .theme__colors {
+    width: inherit;
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .centered {
+    width: calc(100% * 7/12);
+    flex-grow: 0;
+    margin: auto;
+  }
+}
+
 /***********************************
  Typography
 ************************************/
+.container {
+  color: #838383;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.1em;
+}
+
+.link {
+  color: #51DDFC;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.blockquote {
+  line-height: 1.4;
+  font-style: italic;
+  font-size: 1.3em;
+  border-left: 9px solid #58E1C1;
+  border-radius: 5px 0 0 5px;
+  padding-left: 1em;
+}
+
+.headline--primary {
+  font-size: 1.75em;
+  margin: 0.75em;
+  color: #58E1C1;
+}
+
+.headline--secondary {
+  font-weight: 100;
+  margin: 3em 0 1.5em 0;
+  color: #9d9d9d;
+}
+
 /***********************************
  Navigation
 ************************************/
+@media (min-width: 769px) {
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
 /***********************************
  Images
 ************************************/
+.img--logo {
+  display: block;
+  margin: 0 auto 2em;
+}
+@media (min-width: 769px) {
+  .img--logo {
+    margin: 0;
+  }
+}
+.img--frame {
+  border: 1px solid #9d9d9d;
+  padding: 0.75em;
+  margin-bottom: 1.5em;
+}
+@media (min-width: 769px) {
+  .img--frame {
+    margin-bottom: 0;
+  }
+}
 /***********************************
  Buttons
 ************************************/
+.btn--default {
+  background-color: #51DDFC;
+}
+.btn--success {
+  background-color: #63CC82;
+}
+.btn--error {
+  background-color: #E4757A;
+}
+.btn--warning {
+  background-color: #FD7856;
+}
+.btn--info {
+  background-color: #927BC1;
+}
+
+@media (min-width: 769px) {
+  .btn--default[type=submit] {
+    width: inherit;
+  }
+}
+
+.theme__colors {
+  margin-bottom: 0.5em;
+}
+
 /***********************************
  Forms
 ************************************/
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label--hidden {
+  display: none;
+}
+
+.form__input {
+  border: none;
+  border-bottom: 6px solid #58E1C1;
+  padding: 0.75em;
+  margin: 0.75em;
+}
 
 /*# sourceMappingURL=styles.css.map */

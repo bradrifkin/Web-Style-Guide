@@ -1,0 +1,23 @@
+/***********************************
+ Functions
+************************************/
+
+$button-types: ('default', 'success', 'error', 'warning', 'info');
+
+@each $button-type in $button-types {
+	.theme__colors.btn--#{$button-type} {
+		@extend %btn;
+		@include mq('med') {
+			width: 17%;
+		}
+	}
+}
+
+@for $i from 2 through 12 {
+	.grid__col--#{$i} {
+		@include mq('med') {
+			margin-left: .5em;
+			margin-right: .5em;
+		}
+	}
+}

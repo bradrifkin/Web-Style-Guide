@@ -1,3 +1,18 @@
 /***********************************
  Forms
 ************************************/
+
+.form {
+	@include flexy($dir: column);
+}
+
+.form__label--hidden {
+	display: none;
+}
+
+.form__input {
+	border: none;
+	border-bottom: 6px solid $color-primary;
+	padding: .75em;
+	margin: .75em;
+}

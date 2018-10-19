@@ -1,3 +1,42 @@
 /***********************************
  Variables
 ************************************/
+
+// Colors
+$white: #FFF;
+
+$color-primary: #58E1C1; //sea green
+$color-secondary: #51DDFC; //sky blue
+
+$color-text: #838383;
+$color-text-light: lighten($color-text, 10%);
+
+// Themes
+$themes-btn: (
+	'default': #51DDFC,
+	'success': #63CC82,
+	'error': #E4757A,
+	'warning': #FD7856,
+	'info': #927BC1,
+);
+$themes-grid: (
+	'3': #DEB2EE,
+	'4': #7EE6FD,
+	'5': #88D9A0,
+	'6': #3FABCA,
+	'7': #EC9FA3,
+	'8': #FD9F85,
+	'12': #80E8D1,	
+);
+
+// Fonts
+$font-stack-primary: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Layout
+$max-width: 1100px;
+$gutter: 10px;
+
+// Breakpoints
+$breakpoints: (
+	'med': 769px, 
+);

@@ -1,3 +1,20 @@
 /***********************************
  Buttons
 ************************************/
+
+.btn {
+	@include themes($themes-btn);
+}
+
+.btn {
+	&--default[type='submit'] {
+		@include mq('med') {
+			width: inherit;
+		}
+	}
+}
+
+.theme__colors {
+	@extend %roundy-rectangle;
+	margin-bottom: 0.5em;
+}

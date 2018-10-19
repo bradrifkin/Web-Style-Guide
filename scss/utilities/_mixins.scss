@@ -2,4 +2,48 @@
  Mixins
 ************************************/
 
-// Include mixins for media queries and flexbox
+// Center containers
+@mixin center($w) {
+  width: $w;
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Flex container
+@mixin flexy(
+  $disp: flex,
+  $dir: null,
+  $wrap: null,
+  $just: null,
+  $align: null) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+  align-items: $align;
+}
+
+// Background colors
+@mixin themes($map) {
+  @each $theme, $color in $map {
+    &--#{$theme} {
+      background-color: $color;
+    }
+  }
+}
+
+// Media queries
+@mixin mq($break) {  
+  $value: map-get($breakpoints, $break);           
+                
+  @media (min-width: $value) {
+      @content;                   
+  }  
+}
+
+@mixin mq-flex-grow($grow) {
+  @include mq('med') {
+    flex-grow: $grow;
+  }
+}

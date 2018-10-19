@@ -1,3 +1,36 @@
 /***********************************
  Typography
 ************************************/
+
+.container {
+	color: $color-text;
+	font-family: $font-stack-primary;
+	font-size: 1.1em;
+}
+
+.link {
+	color: $color-secondary;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.blockquote {
+	line-height: 1.4;
+	font-style: italic;
+	font-size: 1.3em;
+	border-left: 9px solid $color-primary;
+	border-radius: 5px 0 0 5px;
+	padding-left: 1em;
+}
+
+.headline--primary {
+	font-size: 1.75em;
+	margin: .75em;
+	color: $color-primary;
+}
+
+.headline--secondary {
+	font-weight: 100;
+	margin: 3em 0 1.5em 0;
+	color: $color-text-light;
+}

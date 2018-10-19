@@ -1,3 +1,15 @@
 /***********************************
  Navigation
 ************************************/
+
+.nav__item {
+	a {
+		@extend %link;
+	}
+}
+
+.nav {
+	@include mq('med') {
+		@include flexy($just: flex-end);
+	}
+}

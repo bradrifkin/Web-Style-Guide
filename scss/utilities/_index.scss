@@ -2,6 +2,7 @@
  Import utilities styles
 ***********************************/
 
-@import 'variables',
-		'mixins',
-		'placeholders';
+@import 'variables';
+@import	'mixins';
+@import 'functions';
+@import	'placeholders';
